@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<nav>
+  <ul>
+    <li><a href="#converter">Котировки</a></li>
+    <li><a href="#rates">Rates</a></li>
+  </ul>
+</nav>
+
+<div id="app">
+  <div id="converter" class="page">
+    <h1>Конвертер валют</h1>
+    <label for="convert-input">Введите ваш запрос</label>
+    <input type="text" id="convert-input" placeholder="Пример: 10 EUR in RUB">
+    <button id="convert-button">Конвертировать</button>
+    <p id="convert-result"></p>
+    <p id="error-message-converter"></p>
+  </div>
+  
+  <div id="rates" class="page">
+    <h1>Текущие котировки</h1>
+    <label for="base-currency">Выберите валюту по умолчанию</label>
+    <select id="base-currency">
+      </select>
+    <p id="error-message-rates"></p>
+    <table id="rates-table">
+      <thead>
+        <tr>
+          <th>Currency Name</th>
+          <th>To Base Currency</th>
+          <th>From Base Currency</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

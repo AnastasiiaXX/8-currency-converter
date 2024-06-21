@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #2242c1;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#app {
+  padding: 1em;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+#converter input {
+  padding: 0.5em;
+  margin-right: 0.5em;
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+#converter button {
+  padding: 0.5em;
+}
+
+#base-currency {
+  padding: 0.5em;
+  /* width: 100%; */
+  /* box-sizing: border-box; */
+  margin-bottom: 1em;
+}
+
+label[for="convert-input"],
+label[for="base-currency"] {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#error-message-converter,
+#error-message-rates {
+  color: red; /* Цвет для сообщения об ошибке */
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  table-layout: fixed;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+   #converter input, #converter button, #base-currency {
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+  }
+
+  table, th, td {
+    font-size: 0.8em;
+  }
+
+  th, td {
+    padding: 0.3em;
+  }
+}
